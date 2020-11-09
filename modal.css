@@ -162,6 +162,9 @@
 }
 
 @media screen and (max-width: 580px) {
+  .modal {
+    padding-top: 10%;
+  }
   .modal-content-left {
     margin: 20% auto;
     width: 90%;
