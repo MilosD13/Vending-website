@@ -183,7 +183,7 @@ function getFieldName(input) {
 }
 
 //Event Listeners
-form.addEventListener("submit", (e) => {
+form.addEventListener("submit", (/* e */) => {
   /* e.preventDefault(); */
 
   checkRequred([name, email, tel]);
