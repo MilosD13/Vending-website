@@ -11,7 +11,7 @@ const mobileMenu = () => {
 menu.addEventListener("click", mobileMenu);
 
 // Show active menu when scrolling
-const highlightMenu = () => {
+/* const highlightMenu = () => {
   const elem = document.querySelector(".highlight");
   const homeMenu = document.querySelector("#home-page");
   const aboutMenu = document.querySelector("#about-page");
@@ -41,7 +41,7 @@ const highlightMenu = () => {
 };
 
 window.addEventListener("scroll", highlightMenu);
-window.addEventListener("click", highlightMenu);
+window.addEventListener("click", highlightMenu); */
 
 //  Close mobile Menu when clicking on a menu item
 const hideMobileMenu = () => {
@@ -117,26 +117,6 @@ if (auto) {
   // Run next slide at interval time
   slideInterval = setInterval(nextSlide, intervalTime);
 }
-
-/* Modal Items */
-const modal = document.getElementById("email-modal");
-const openBtn = document.querySelector("#signup");
-const closeBtn = document.querySelector(".close-btn");
-
-//click events
-openBtn.addEventListener("click", () => {
-  modal.style.display = "block";
-});
-
-closeBtn.addEventListener("click", () => {
-  modal.style.display = "none";
-});
-
-window.addEventListener("click", (e) => {
-  if (e.target === modal) {
-    modal.style.display = "none";
-  }
-});
 
 //Form Validation
 const form = document.getElementById("form");
