@@ -690,12 +690,21 @@
 }
 .slide:nth-child(2) {
   background: url("/Images/pic3.svg") no-repeat center top/cover;
+  background-color: #f8f8f8;
+  height: 100%;
+  background-size: 100vh;
 }
 .slide:nth-child(3) {
   background: url("/Images/pic4.svg") no-repeat center top/cover;
+  background-color: #f8f8f8;
+  height: 100%;
+  background-size: 100vh;
 }
 .slide:nth-child(4) {
   background: url("/Images/pic5.svg") no-repeat center top/cover;
+  background-color: #f8f8f8;
+  height: 100%;
+  background-size: 100vh;
 }
 .slide:nth-child(5) {
   background: url("https://source.unsplash.com/ULmaQh9Gvbg/1600x900") no-repeat
