@@ -613,7 +613,7 @@
 .slider {
   position: relative;
   overflow: hidden;
-  height: 100vh;
+  height: 90vh;
   /*   width: 100vw; */
 }
 
@@ -637,7 +637,7 @@
   left: -600px;
   opacity: 0;
   width: 30em;
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(177, 251, 255, 0.5);
   color: #333;
   padding: 35px;
 }
@@ -666,7 +666,7 @@
 
 .buttons button {
   border: 2px solid #fff;
-  background-color: transparent;
+  background-color: grey;
   color: #fff;
   cursor: pointer;
   padding: 13px 15px;
@@ -675,38 +675,27 @@
 }
 
 .buttons button:hover {
-  background-color: #fff;
-  color: #333;
+  background-color: black;
+  color: #fff;
 }
 
-@media (max-width: 500px) {
-  .slide .content {
-    bottom: -300px;
-    left: 0;
-    width: 100%;
-    height: 19em;
-  }
-
-  .slide.current .content {
-    transform: translateY(-300px);
-  }
-}
 /* Backgorund Images */
 
 .slide:first-child {
-  background: url("/Images/steps.jpg") no-repeat center top/cover;
-  background-size: 100%;
+  background: url("/Images/pic2.svg") no-repeat center top/cover;
+  background-color: #f8f8f8;
+
+  height: 100%;
+  background-size: 100vh;
 }
 .slide:nth-child(2) {
-  background: url("/Images/contact_us.jpg") no-repeat center top/cover;
+  background: url("/Images/pic3.svg") no-repeat center top/cover;
 }
 .slide:nth-child(3) {
-  background: url("https://source.unsplash.com/TMOeGZw9NY4/1600x900") no-repeat
-    center top/cover;
+  background: url("/Images/pic4.svg") no-repeat center top/cover;
 }
 .slide:nth-child(4) {
-  background: url("https://source.unsplash.com/yXpA_eCbtzI/1600x900") no-repeat
-    center top/cover;
+  background: url("/Images/pic5.svg") no-repeat center top/cover;
 }
 .slide:nth-child(5) {
   background: url("https://source.unsplash.com/ULmaQh9Gvbg/1600x900") no-repeat
@@ -715,6 +704,28 @@
 .slide:nth-child(6) {
   background: url("https://source.unsplash.com/ggZuL3BTSJU/1600x900") no-repeat
     center center/cover;
+}
+
+@media (max-width: 500px) {
+  .slide .content {
+    background-size: 100%;
+    bottom: -300px;
+    left: 0;
+    width: 100%;
+    height: 19em;
+  }
+  .slide:first-child,
+  .slide:nth-child(2),
+  .slide:nth-child(3),
+  .slide:nth-child(4),
+  .slide:nth-child(5) {
+    background-size: 90%;
+    background-position-y: 20%;
+  }
+
+  .slide.current .content {
+    transform: translateY(-300px);
+  }
 }
 
 /* Footer CSS */
